@@ -1,0 +1,68 @@
+.play-container {
+  height: 70%;
+  display: flex;
+  justify-content: center;
+
+  .triangle {
+    background: url(/images/bg-triangle.svg?77c6ca4…) no-repeat;
+    width: 30em;
+    margin-top: 4em;
+    background-size: 407px;
+    border: solid;
+    background-position-x: center;
+
+      .row {
+        display: flex;
+        justify-content: space-between;
+
+        .paper {
+          background: $paper-color;
+          min-width: 130px;
+          height: 130px;
+          border-radius: 50%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          position: relative;
+          bottom: 2em;
+        }
+        .scissors {
+          background: $scissors-color;
+          min-width: 130px;
+          height: 130px;
+          border-radius: 50%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          position: relative;
+          bottom: 2em;
+        }
+        &-2 {
+          display: flex;
+          justify-content: center;
+          align-items: end;
+          height: 70%;
+          .rock {
+            background: $rock-color;
+            min-width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            bottom: 2em;
+          }
+        }
+      }
+    .circle {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      background: white;
+      padding: 1.5em;
+      box-shadow: -1px 3px 0px 2px rgba(0,0,0,0.52) inset;
+    }
+    }
+  }
